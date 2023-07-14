@@ -1,0 +1,65 @@
+<HTML>
+
+  <HEAD>
+  <style>
+   .bg-img{
+   background-image:url(sapna.jpg);
+   background-repeat:repeat;
+  
+  
+    <TITLE>Feedback Form</TITLE>
+	</style>
+  </HEAD>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+ 
+<script>
+
+  
+  
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  
+  </script>
+
+  <BODY style= "background-: skyblue;" class="bg-img">
+  
+  
+  
+    <H1 align="center"> Feedback Form</H1>
+    <FORM action= method="post" enctype="text/plain"align="center">
+      First Name : <INPUT type="text" name="firstname" placeholder="Enter name here"required><br/><br>
+	  
+      Second Name : <INPUT type="text" name="secondname"  placeholder="Enter surname here"required>
+      <BR>
+      <BR>
+      <!--It's important that both of these radio button have the same name so they behave as one component (i.e. Only one can be selected at a time)-->
+     
+      <!--This uses the new HTML "email" INPUT type which will automatically validates the email address when the SUBMIT button is clicked-->
+      email: <INPUT type="email" name="mail" placeholder="e-mail address">
+      <BR>
+      <BR>
+        Comment :<BR>        
+        <TEXTAREA rows="6" cols="50" name="commentfield"></TEXTAREA>
+        <BR>
+        <BR>
+		<p>Date: <input type="text" id="datepicker"></p><br>
+		<h2>ratings</h2>
+  <fieldset>
+    <legend> </legend>
+    <label for="radio-1">1</label>
+    <input type="radio" name="radio-1" id="radio-1">
+    <label for="radio-2">2</label>
+    <input type="radio" name="radio-1" id="radio-2">
+    <label for="radio-3">3</label>
+    <input type="radio" name="radio-1" id="radio-3">
+  </fieldset><br>
+        <INPUT TYPE="submit"  value="Send Feedback">
+        <INPUT TYPE="reset" value="Reset">  
+  </BODY>
+  
+ 
+</HTML>
